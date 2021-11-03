@@ -1,2 +1,4 @@
 ## HOTLINE BLINK NEWS
-Hot news for all 
+Hot news for all
+## AUTHOR
+Alphonce Otieno Odhiambo 
