@@ -4,3 +4,5 @@ Hot news for all
 Alphonce Otieno Odhiambo 
 ## DESCRIPTION
 The pp is a flask base appliction that gets the news API and displays real time articles from major news station all over the World
+## USER STORIES
+You will be able to see...:
