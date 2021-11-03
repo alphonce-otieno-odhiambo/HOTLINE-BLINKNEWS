@@ -1,14 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    {%if title%}
-    <title>{%title%}</title>
-    {%else%}
-    <title>Welcome to Hotline Blink News</title>
-    {%endif%}
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'base.html'%}
+{% block content %}
+<h1 class="text-center">HOTLINE BLINNK NEWS</h1>
+         <ul>
+            {% for article in articles %}
+            <div class="row row-cols-1 row-cols-md-1 g-4 d-flex">
+                <div class="col p-3">
+                  <div class="card p-3">
+                    <img src="{{ article.urlToImage }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title text-warning">{{ article.title}}</h3>
+                      <p class="card-text fs-4">{{article.author}}</p>
+                      <p class="card-text text-bold text-dark fs-3 "><strong>{{article.description}}</strong></p>
+                      <p class="card-text fs-4">{{article.publishedAt}}</p>
+                      <p class="card-text text-center text-info display-5 ">{{article.content}} </p>
+                      <a class="btn btn-success p-2" href="{{article.url}}}">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+            </div>  
+            {% endfor %}
+        </ul>  
+{% endblock%}
