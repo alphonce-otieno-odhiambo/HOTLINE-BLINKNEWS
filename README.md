@@ -21,5 +21,14 @@ The app requires the following se up installations for it to function in python3
 To run the application, open the clonned file in the terminal and run the following command:
     $ chmod +x run.py $./run.py .
     To run tests to the aplication command python3 article_test.py $python3 source_test.py
-    
+## TECHNOLOGIES USED
+.Python3.8
+.HTML
+.CSS
+.FLASK
+.heroku.cli
+## known Buggs
+No Bugs for now bt incase the are noticed feel free to reach out
+
+
 
