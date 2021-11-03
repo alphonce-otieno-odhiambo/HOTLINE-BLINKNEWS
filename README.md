@@ -17,5 +17,9 @@ The app requires the following se up installations for it to function in python3
     Install all the dependecies 
     Create an instance/config.py
     Assign your news API key to the veriable ARTICLE_API_KEY
+## RUN THE APP
+To run the application, open the clonned file in the terminal and run the following command:
+    $ chmod +x run.py $./run.py .
+    To run tests to the aplication command python3 article_test.py $python3 source_test.py
     
 
