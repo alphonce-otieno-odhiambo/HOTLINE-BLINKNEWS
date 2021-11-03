@@ -30,5 +30,11 @@ To run the application, open the clonned file in the terminal and run the follow
 ## known Buggs
 No Bugs for now bt incase the are noticed feel free to reach out
 
+## CONTACT INFO.
+Reach my email .. odhiamboalphonce23@gmail.com
+
+## LICENSE
+MIT license: Copyright (c) 2021 Alphonce otieno
+
 
 
