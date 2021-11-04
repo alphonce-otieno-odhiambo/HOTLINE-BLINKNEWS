@@ -1,18 +1,24 @@
-from app import app
+
 import urllib.request,json
 from .model import News
 
 
- # Getting api key
-api_key = app.config['NEWS_API_KEY']
+# Getting api key
+api_key = None
 # Getting the movie base url
-base_url = app.config["NEWS_API_BASE_URL"]
+base_url = None
+
+def configure_request(app):
+    global api_key,base_url
+    api_key = app.config['NEWS_API_KEY']
+    base_url = app.config['NEWS_API_BASE_URL']
+
 
 def get_news():
     '''
     Function that gets the json response to our url request
     '''
-    get_news_url = base_url.format(api_key)
+    get_news_url = 'https://newsapi.org/v2/everything?q=bitcoin&apiKey=a0811784c6544548b7bef41c29abb906'
     with urllib.request.urlopen(get_news_url) as url:
         get_news_data = url.read()
         get_news_response = json.loads(get_news_data)
